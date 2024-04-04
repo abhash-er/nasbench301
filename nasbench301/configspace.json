@@ -6,7 +6,8 @@
       "log": true,
       "lower": 64,
       "upper": 128,
-      "default": 96
+      "default": 96,
+      "q": null
     },
     {
       "name": "ImageAugmentation:augment",
@@ -39,7 +40,8 @@
       "log": false,
       "lower": 1,
       "upper": 3,
-      "default": 1
+      "default": 1,
+      "q": null
     },
     {
       "name": "ImageAugmentation:cutout_length",
@@ -47,7 +49,8 @@
       "log": false,
       "lower": 1,
       "upper": 50,
-      "default": 16
+      "default": 16,
+      "q": null
     },
     {
       "name": "ImageAugmentation:fastautoaugment",
@@ -247,7 +250,10 @@
       "log": true,
       "mu": 0.025,
       "sigma": 0.05,
-      "default": 0.025
+      "lower": null,
+      "upper": null,
+      "default": 0.025,
+      "q": null
     },
     {
       "name": "OptimizerSelector:sgd:momentum",
@@ -255,7 +261,8 @@
       "log": false,
       "lower": 0.1,
       "upper": 0.99,
-      "default": 0.9
+      "default": 0.9,
+      "q": null
     },
     {
       "name": "OptimizerSelector:sgd:weight_decay",
@@ -263,7 +270,10 @@
       "log": true,
       "mu": 0.0003,
       "sigma": 0.0006,
-      "default": 0.0003
+      "lower": null,
+      "upper": null,
+      "default": 0.0003,
+      "q": null
     },
     {
       "name": "SimpleLearningrateSchedulerSelector:cosine_annealing:T_max",
@@ -271,7 +281,8 @@
       "log": false,
       "lower": 10,
       "upper": 100,
-      "default": 55
+      "default": 55,
+      "q": null
     },
     {
       "name": "SimpleLearningrateSchedulerSelector:cosine_annealing:eta_min",
@@ -279,7 +290,8 @@
       "log": false,
       "lower": 0.0,
       "upper": 2.0,
-      "default": 1e-08
+      "default": 1e-08,
+      "q": null
     },
     {
       "name": "SimpleLearningrateSchedulerSelector:lr_scheduler",
@@ -303,7 +315,8 @@
       "log": true,
       "lower": 0.01,
       "upper": 0.7,
-      "default": 0.2
+      "default": 0.2,
+      "q": null
     },
     {
       "name": "NetworkSelectorDatasetInfo:darts:edge_normal_10",
